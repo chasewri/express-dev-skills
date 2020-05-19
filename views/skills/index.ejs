@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <% title = 'Skills List' %>
+    <%- include('../partials/__header') -%>
+    <div class="info">
+      <h3>Here are the skills currently activated:</h3>
+      <ul>
+      <% skills.forEach(function(s) { %>
+        <li>
+          <%= s.skill %>
+          --
+          <a href="/skills/<%= s.id %>">Click for skill details</a>
+        </li>
+      <%  }); %>
+      </ul>
+    </div>
+    <%- include('../partials/__footer') -%>
+  </body>
+</html>
