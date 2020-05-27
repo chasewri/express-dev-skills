@@ -22,10 +22,15 @@ function getOne(id) {
   return skills.find(skill => skill.id === parseInt(id))
 }
 function create(skill) {
-  skill.id = Date.now() % 1000000;
-  skills.push(skill);
+  if (skill.skill != '') {
+    skill.id = Date.now() % 1000000;
+    skills.push(skill);
+  } else {
+    console.log(`there's no skill in there!!`); 
+  }
 }
 function deleteOne(id) {
+  console.log(id, 'in model =>');
   const idx = skills.findIndex(skill => skill.id === parseInt(id));
   skills.splice(idx, 1);
 }

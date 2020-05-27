@@ -5,8 +5,8 @@
       <div class="description">
         <em><%= skill.description %></em>
       </div>
-      <form class="center" action="/skills/<%= skill.id %>?_method=DELETE" method="POST">
-        <input class="button center" type="button" value="Delete this skill">
+      <form class="center down-plz" action="/skills/<%= skill.id %>?_method=DELETE" method="POST">
+        <input class="button center" type="submit" value="Delete this skill">
       </form>
     </div>
     <%- include('../partials/__footer') -%>

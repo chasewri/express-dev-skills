@@ -7,7 +7,7 @@ function index(req, res, next) {
   })
 }
 function show(req, res, next) {
-  console.log(req.params, 'Here be those req.params you asked for');
+  // console.log(req.params, 'Here be those req.params you asked for');
   res.render('skills/show', {
     title: 'Skill Details',
     skill: skillsDB.getOne(req.params.id),
@@ -24,6 +24,7 @@ function create(req, res, next) {
   res.redirect('/skills')  
 }
 function deleteSkill(req, res) {
+  console.log(req.params);
   skillsDB.deleteOne(req.params.id);
   res.redirect('/skills');
 }
@@ -33,5 +34,5 @@ module.exports = {
   show,
   newSkill,
   create,
-  delete: deleteSkill,
+  deleteSkill,
 }

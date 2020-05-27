@@ -64,4 +64,16 @@ blockquote {
   background-color: plum;
   border: none;
   border-radius: 12px;
+  font-size: 1.2em;
+  width: 30%;
+}
+.down-plz {
+  margin-top: 10vh;
+}
+form {
+  font-size: 1.2em;
+}
+input {
+  width: 30%;
+  font-size: 1.2em;
 }
