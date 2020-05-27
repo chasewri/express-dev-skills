@@ -1,10 +1,10 @@
 <%- include('../partials/__header') %>
-<form class="newSkill" action="/skills" method="POST">
+<form class="newSkill" action="/skills" method="POST" autocomplete="off">
     <label for="skill">Name of Skill:</label><br>   
-    <input type="text" name="skill"><br>
+    <input type="text" name="skill" autofocus placeholder="skill..."><br>
     <br>
     <label for="description">Description of Skill:</label><br>
-    <input type="text" name="description"><br>
+    <input type="text" name="description" placeholder="description..."><br>
     <br>
     <input class="button" type="submit" value="Add Skill">
 </form>
