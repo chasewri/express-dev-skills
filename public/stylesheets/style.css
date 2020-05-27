@@ -7,6 +7,10 @@ ul {
   padding-bottom: 25vh;
   list-style-type: none;
 }
+.center {
+  text-align: center;
+  align-items: center;
+}
 h3 {
   text-align: center;
   margin: 10vh auto;

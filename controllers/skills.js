@@ -23,10 +23,15 @@ function create(req, res, next) {
   skillsDB.create(req.body);
   res.redirect('/skills')  
 }
+function deleteSkill(req, res) {
+  skillsDB.deleteOne(req.params.id);
+  res.redirect('/skills');
+}
 
 module.exports = {
   index,
   show,
   newSkill,
-  create
+  create,
+  delete: deleteSkill,
 }
