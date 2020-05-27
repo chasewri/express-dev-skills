@@ -15,6 +15,14 @@ h3 {
 li {
   font-size: 1.5em;
 }
+button {
+  margin-top: 25px;
+  padding: 10px;
+  background-color: plum;
+  border: none;
+  border-radius: 12px;
+
+}
 a {
   align-items: center;
   text-decoration: none;
@@ -29,9 +37,27 @@ footer {
   text-align: center;
   max-height: 8vh;
 }
-.mdl-mini-footer {  .mdl-mini-footer {
+.mdl-mini-footer {
   align-items: center;
 }
 blockquote {
   text-align: center;
+}
+.description {
+  text-align: center;
+  font-size: 1.25em;
+}
+.newSkill {
+  text-align: center;
+  min-height: 65vh;
+  align-items: center;
+  margin-top: 15vh;
+
+}
+.button {
+  margin-top: 25px;
+  padding: 10px;
+  background-color: plum;
+  border: none;
+  border-radius: 12px;
 }

@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <%- include('../partials/__header') -%>
+
+    <%- include('../partials/__header') %>
     <div class="info">
       <h3>Here are the skills currently activated:</h3>
       <ul>
@@ -11,6 +10,12 @@
           <a href="/skills/<%= s.id %>">Click for skill details</a>
         </li>
       <%  }); %>
-      </ul>
+      <a href="/skills/new">
+        <button>
+          Add Skill
+        </button>
+      </a>
     </div>
-    <%- include('../partials/__footer') -%>
+      </ul>
+
+    <%- include('../partials/__footer') %>

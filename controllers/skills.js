@@ -13,8 +13,20 @@ function show(req, res, next) {
     skill: skillsDB.getOne(req.params.id),
   })
 }
+function newSkill(req, res, next) {
+  res.render('skills/new', {
+    title: 'Add a New Skill'
+  })
+}
+function create(req, res, next) {
+  console.log(req.body);
+  skillsDB.create(req.body);
+  res.redirect('/skills')  
+}
 
 module.exports = {
   index,
-  show
+  show,
+  newSkill,
+  create
 }

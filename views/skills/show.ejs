@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
     <%- include('../partials/__header') -%>
     <div class="info">
 
       <h3>Skills information for: <em><%= skill.skill %></em></h3>
-      <blockquote>
-        <%= skill.description %>
-      </blockquote>
+      <div class="description">
+        <em><%= skill.description %></em>
+      </div>
     </div>
     <%- include('../partials/__footer') -%>

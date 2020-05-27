@@ -4,6 +4,8 @@ const skillsCtrl = require('../controllers/skills')
 
 // This is at skills !important
 router.get('/', skillsCtrl.index)
+router.get('/new', skillsCtrl.newSkill)
 router.get('/:id', skillsCtrl.show)
+router.post('/', skillsCtrl.create)
 
 module.exports = router
